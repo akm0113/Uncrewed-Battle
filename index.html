@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncrewed Battle</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="myScript.js" defer></script>
+  </head>
+  <body>
+    <img class="hamBtn" src="img/menu_toggle.svg" alt="">
+    <div id="mov" class="screen">
+      <video id="videoForWeb" muted playsinline src="mov/main2.mp4"></video>
+    </div>
+    <div id="mov_m" class="screen_m">
+      <video id="videoForWeb_m" muted playsinline src="mov/main_m.mp4"></video>
+    </div>
+    <img src="img/cursor.png" alt="Cursor" class="custom-cursor" id="customCursor">
+    <img src="img/movie.png" alt="movie" class="return_movie" id="returnMovieButton">
+    <div id="main" class="screen">
+      <nav class="menuBar">
+        <div class="logo">
+          <a href="index.html?hasVisited=true">Uncrewed Battle</a>
+        </div>
+        <div class="menu">
+          <img src="img/uav_b1.png" alt="uav" class="kategorie" onclick="goToPage('sub1.html')">
+          <img src="img/ugv_b1.png" alt="ugv" class="kategorie" onclick="goToPage('sub2.html')">
+          <img src="img/usv_b1.png" alt="usv" class="kategorie" onclick="goToPage('sub3.html')">
+          <img src="img/uuv_b1.png" alt="uuv" class="kategorie" onclick="goToPage('sub4.html')">
+        </div>
+        <ul class="hamBtn_menu">
+          <li>
+            <a href="sub1.html">UAV</a>
+          </li>
+          <li>
+            <a href="sub2.html">UGV</a>
+          </li>
+          <li>
+            <a href="sub3.html">USV</a>
+          </li>
+          <li>
+            <a href="sub4.html">UUV</a>
+          </li>
+          <li>
+            <img src="img/movie.png" alt="movie" style="width:10%" id="returnMovieButton_m">
+          </li>
+        </ul>
+        <div class="container_index">
+          <p id="text">무인기(無人機, uncrewed/unmanned vehicle)란, '유인기(有人機)'의 반의어로서 사람이 타지 않고 원격조종 혹은 자동으로 운용할 수 있는 병기 일체를 지칭한다. <br>
+            단순한 원격조작 병기라는 분류에서는 미사일 등의 무기체계가 이미 존재하나, 미사일은 한번 발사하면 다시는 재사용할 수 없기 때문에 지속적인 전투능력이 없다. <br>반면 무인기의 경우 원래 지속 가능한 전투능력을 가진 병기(전투기, 장갑차 등)을 무인화한 병기이기 때문에 미사일, 기관포 등을 탑재하여 지속적인 전투능력을 가진다는 차이가 있다.</p>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
